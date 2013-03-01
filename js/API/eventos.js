@@ -5,19 +5,14 @@ $(document).ready(function(){
 		window.location.href="#login";
 	}
 	
-	$('#logEnv').click(function(){
+	$('#logEnv').tap(function(){
 		var nom = $("#logNom").val();
 		var lug = $("#logLug").val();
 		var ema = $("#logEma").val();
 		var tel = $("#logTel").val();
 		
 		if(nom != '' && lug != 'Lugar de Origen' && ema != '' & tel !=''){
-			pgAlert(
-				nom+'\n'+
-				lug+'\n'+			
-				ema+'\n'+		
-				tel,
-				'Aceptar');			
+			registrar(nom, lug, ema, tel);		
 		}else{
 			pgAlert("Todos los campos son requerido, 'Reintentar'");
 		}
@@ -33,6 +28,7 @@ function isLogin()
 	return false;
 }
 
-
+//resume- regresar a la aplicacion. online- detecta la conexion a internet. offline- desconecta. pause-pausa
+<!--document.addEventListener("pause", function(){}, false);-->
 
 
