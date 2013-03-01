@@ -1,6 +1,6 @@
 // Eventos
 $(document).ready(function(){
-	document.addEventListener("deviceready",function(){
+	window.addEventListener("deviceready",function(){
 	if(!isLogin()){
 		window.location.href="#login";
 	}
