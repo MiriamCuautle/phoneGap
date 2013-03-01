@@ -11,3 +11,4 @@ function registrar(nom, lug, ema, tel){
 			pgAlert(msg, 'Cancelar');
 	});
 }
+
