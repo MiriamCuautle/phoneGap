@@ -3,8 +3,8 @@ function tomarImg(){
 	// capture callback
 	var captureSuccess = function(mediaFiles) {
 		for (i = 0; i < mediaFiles.length; i++) {
-			//path = mediaFiles[i].fullPath;
-			 uploadFile(mediaFiles[i]);
+			path = mediaFiles[i].fullPath;
+			uploadFile(path);
 			// do something interesting with the file
 		}
 		$('#logFoto').css('background-color','#0F6');
