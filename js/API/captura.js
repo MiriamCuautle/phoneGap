@@ -3,10 +3,13 @@ function tomarImg(){
 	// capture callback
 	var captureSuccess = function(mediaFiles) {
 		for (i = 0; i < mediaFiles.length; i++) {
-			path = mediaFiles[i].fullPath;
+			//path = mediaFiles[i].fullPath;
+			 uploadFile(mediaFiles[i]);
 			// do something interesting with the file
 		}
-		pgAlert(path, "oK");
+		$('#logFoto').css('background-color','#0F6');
+		$('#logEnv').prepend('<img src="'+path+'" style="width:100%;" />');
+		//pgAlert(path, "oK");
 	};
 	
 	// capture error callback
@@ -18,3 +21,4 @@ function tomarImg(){
 	navigator.device.capture.captureImage(captureSuccess, captureError, {limit:1});
 	
 }
+
