@@ -20,7 +20,6 @@ $(document).ready(function(){
 		});
 		$('#logFoto').tap(function(){
 			tomarImg();
-			uploadFile(ruta);
 		});
 		
 		$('#logEnv').tap(function(){
