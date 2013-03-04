@@ -23,6 +23,7 @@ $(document).ready(function(){
 		});
 		
 		$('#logEnv').tap(function(){
+			var ruta = $("ruta").val();
 			uploadFile(ruta);
 		});
 	}//Cierra el if de loggin
