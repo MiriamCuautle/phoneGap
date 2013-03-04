@@ -12,7 +12,7 @@ $(document).ready(function(){
 			var tel = $("#logTel").val();
 			
 			if(nom != '' && lug != 'Lugar de Origen' && ema != '' & tel !=''){
-				registrar(nom, lug, ema, tel);		
+				registrar(nom, lug, ema, tel);	
 			}else{
 				pgAlert("Todos los campos son requerido, 'Reintentar'");
 			}
@@ -20,6 +20,11 @@ $(document).ready(function(){
 		});
 		$('#logFoto').tap(function(){
 			tomarImg();
+			uploadFile(ruta);
+		});
+		
+		$('#logEnv').tap(function(){
+			uploadFile(ruta);
 		});
 	}//Cierra el if de loggin
 }, false);
