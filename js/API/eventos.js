@@ -22,20 +22,20 @@ $(document).ready(function(){
 			tomarImg();
 		});
 		
-		$('#logEnv').tap(function(){
+		/*$('#logEnv').tap(function(){
 			var ruta= $("#logFoto").val();
 			uploadFile(ruta);
-		});
+		});*/
 	}//Cierra el if de loggin
 }, false);
 	
 });
 
 
-function isLogin()
+/*function isLogin()
 {
 	return false;
-}
+}*/
 
 //resume- regresar a la aplicacion. online- detecta la conexion a internet. offline- desconecta. pause-pausa
 <!--document.addEventListener("pause", function(){}, false);-->

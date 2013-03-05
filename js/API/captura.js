@@ -6,7 +6,7 @@ function tomarImg(){
 			path = mediaFiles[i].fullPath;
 			// do something interesting with the file
 		}
-		$('#logFoto').css('background-color','#0F6').attr("ruta",path);
+		$('#logFoto').attr("ruta",path).css('background-color','#0F6');
 		$('#logEnv').prepend('<img src="'+path+'" style="width:100%;" />');
 		//pgAlert(path, "oK");
 	};
