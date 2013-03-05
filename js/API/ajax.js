@@ -7,6 +7,7 @@ function registrar(nom, lug, ema, tel){
 	}).done(function(msg) {
 		if(msg==1)
 		{
+			pgAlert(msg, 'ok');
 				pgAlert($('#logFoto').attr('ruta'));
 				//uploadFile($('#logFoto').attr('ruta'))
 		}
