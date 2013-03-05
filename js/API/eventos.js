@@ -31,11 +31,11 @@ $(document).ready(function(){
 	
 });
 
-
+/*
 function isLogin()
 {
 	return false;
-}
+}*/
 
 //resume- regresar a la aplicacion. online- detecta la conexion a internet. offline- desconecta. pause-pausa
 <!--document.addEventListener("pause", function(){}, false);-->
