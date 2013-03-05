@@ -8,7 +8,7 @@ function registrar(nom, lug, ema, tel){
 		if(msg==1)
 		{
 				pgAlert($('#logFoto').attr('ruta'));
-				uploadFile($('#logFoto').attr('ruta'))
+				//uploadFile($('#logFoto').attr('ruta'))
 		}
 		else
 			pgAlert(msg, 'Cancelar');
